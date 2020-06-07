@@ -1,0 +1,61 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "encoding": true,
+    "directive-selector": [ true, "attribute", "jobportal", "camelCase" ],
+    "component-selector": [ true, "element", "jobportal", "kebab-case" ],
+    "max-file-line-count": [ true, 450 ],
+    "max-line-length": [
+      true,
+      {
+        "limit": 140,
+        "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z]+ implements |// "
+      }
+    ],
+    "no-unnecessary-class": [
+      true,
+      "allow-constructor-only",
+      "allow-static-only",
+      "allow-empty-class"
+    ],
+    "member-access": [ true, "no-public" ],
+    "prefer-const": true,
+    "no-var-keyword": true,
+    "array-type": [ true, "array" ],
+    "quotemark": [ true, "single", "avoid-template", "avoid-escape" ],
+    "cyclomatic-complexity": [ true, 20 ],
+    "indent": [ true, "spaces", 2 ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "import-spacing": true,
+    "no-trailing-whitespace": true,
+    "semicolon": [ true, "always", "strict-bound-class-methods" ],
+    "file-name-casing": [ true, "kebab-case" ],
+    "class-name": true,
+    "interface-name": [ true, "never-prefix" ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "require-const-for-all-caps",
+      "ban-keywords"
+    ],
+    "comment-format": [ true, "check-space" ],
+    "ordered-imports": [ false ],
+    "no-console": [ false ],
+    "object-literal-sort-keys": [ false ],
+    "trailing-comma": [ false ],
+    "no-empty": [ false ]
+  },
+  "rulesDirectory": [ "codelyzer" ]
+}
