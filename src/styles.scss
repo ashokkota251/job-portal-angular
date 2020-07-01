@@ -1,5 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
+.jobportal-btn-primary {
+  background: #4bcab5 !important;
+  color: #fff !important;
+  border: none;
+  width: 45%;
+  font-weight: 600;
+  font-size: 16px;
+  height: 45px;
+}
+
+.jobportal-btn-secondary {
+  background: #fff !important;
+  color: #4bcab5 !important;
+  border: none;
+  width: 45%;
+  font-weight: 600;
+  font-size: 16px;
+  height: 45px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+//Login Page
 .jobportal-login-bg {
   background: url("assets/bg/login.jpg") no-repeat;
   background-size: cover;
@@ -8,11 +33,90 @@
 }
 
 .jobportal-login-bg form {
-  width: 500px;
-  background-color: white;
-  padding: 75px 60px;
-  box-shadow: 0px 2px 6px #0000000A;
-  -webkit-box-shadow: 0px 2px 6px #0000000A;
-  -moz-box-shadow: 0px 2px 6px #0000000A;
+  text-align: center;
+  background: #29374c;
+  border-radius: 5px;
+  width: 460px;
+  box-shadow: 0px 2px 6px #0000000a;
+  -webkit-box-shadow: 0px 2px 6px #0000000a;
+  -moz-box-shadow: 0px 2px 6px #0000000a;
   border-radius: 0px;
+  color: white;
+}
+
+.jobportal-login-bg form .form-control {
+  width: 100%;
+  padding: 11px 40px 11px 15px;
+  height: auto;
+}
+
+.jobportal-login-bg form .form-group {
+  margin-bottom: 2rem;
+}
+
+.form-control,
+.form-control:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.form-check-label {
+  font-size: 15px;
+  color: #d6d6d6;
+}
+
+.jobportal-login-error {
+  color: white !important;
+  text-align: right;
+}
+
+//Profile Page
+.jobportal-profile-section {
+  background-color: #f2f6ff8f;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+
+.jobportal-profile-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.jobportal-profile-image h5 {
+  color: #007bff;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.jobportal-profile-image p {
+  color: #ccc;
+  margin: 0;
+  font-size: 14px;
+}
+
+.jobportal-profile-descriotion p {
+  color: #585f65;
+  padding: 15px 0;
+}
+
+.jobportal-profile-skills h5 {
+  color: #1d2124;
+  font-size: 18px;
+}
+
+.jobportal-profile-skills .badge-pill {
+  margin-right: 5px;
+}
+
+.jobportal-profile-basic-info span {
+  font-weight: 600;
+  display: block;
+}
+
+.jobportal-profile-basic-info {
+  font-size: 15px;
 }

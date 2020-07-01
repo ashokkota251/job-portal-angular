@@ -10,11 +10,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './shared/_components';
 import { SecurityInterceptorService } from './shared/_service/authentication/security-interceptor.service';
 import { ErrorInterceptorService } from './shared/_service/authentication/error-service.service';
+import { RegistrationComponent } from './shared/_components/registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

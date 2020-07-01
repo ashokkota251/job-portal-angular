@@ -1,0 +1,41 @@
+<div class="container-fluid jobportal-login-bg">
+  <div class="d-flex justify-content-center" style="padding-top: 2%;">
+    <form [formGroup]="registartionForm" (ngSubmit)="onSubmit()" novalidate style="padding: 45px 60px;">
+    <h2 class="text-center" style="margin-bottom: 20px;">Job Portal</h2>
+    <h5 class="text-center" style="margin-bottom: 25px;">Create an account</h5>
+
+    <div class="form-group text-left">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="role" id="employer" value="Employer" formControlName="role">
+        <label class="form-check-label" for="employer">Employer</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="role" id="employee" value="Employee" formControlName="role">
+        <label class="form-check-label" for="employee">Employee</label>
+      </div>
+    </div>
+
+		<div class="form-group">
+      <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+    </div>
+
+    <div class="form-group">
+      <input type="password" class="form-control" formControlName="password" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+      <input type="password" class="form-control" formControlName="confirmpassword" placeholder="Confirm Password">
+    </div>
+
+    <div class="form-group form-check text-left">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1"> I agree to the terms of service</label>
+    </div>
+
+    <div class="form-group d-block">
+      <button type="button" class="btn jobportal-btn-secondary float-left" (click)="redirectLogin()">Login</button>
+      <button type="submit" class="btn jobportal-btn-primary float-right">Register</button>
+    </div>
+  </form>
+</div>
+</div>

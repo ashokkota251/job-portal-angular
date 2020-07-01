@@ -32,6 +32,13 @@ export class AuthenticationService {
     }));
   }
 
+  employeeRegister(userUata: any) {
+    return this.http.post<string>(environment.api_url + 'Registration/user', userUata)
+    .pipe(map((user: any) => {
+        return user;
+    }));
+  }
+
   getUserInfoByToken(access: string) {
     return this.helper.decodeToken(access);
   }

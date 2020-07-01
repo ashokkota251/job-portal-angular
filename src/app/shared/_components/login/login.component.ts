@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirectSignup() {
+    this.router.navigateByUrl('/registration');
+  }
+
   onSubmit() {
     if (this.loginForm.valid) {
       this.authenticationService
@@ -38,11 +42,11 @@ export class LoginComponent implements OnInit {
       .pipe(first())
       .subscribe((data: any) => {
         if (data.role === 'Admin') {
-          this.router.navigate(['/admin']);
+          this.router.navigateByUrl('/admin');
        } else if (data.role === 'Employer') {
-          this.router.navigate(['/employer']);
+          this.router.navigateByUrl('/employer');
         } else if (data.role === 'Employee') {
-          this.router.navigate(['/employee']);
+          this.router.navigateByUrl('/employee');
         }
       }, (error: any) => {
         this.errorMessage = error.error.message;
